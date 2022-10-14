@@ -1,20 +1,70 @@
 <div>
     @include('livewire.addmodel')
 
+    {{-- Submited massege alert start --}}
     @if (session()->has('quote_massage'))
-    <div class="alert alert-success">
-        {{ session('quote_massage') }}
-    </div>
+        <script>
+            const Toast = Swal.mixin({
+            toast: true,
+            position: 'top-end',
+            showConfirmButton: false,
+            timer: 3000,
+            timerProgressBar: true,
+            didOpen: (toast) => {
+                toast.addEventListener('mouseenter', Swal.stopTimer)
+                toast.addEventListener('mouseleave', Swal.resumeTimer)
+            }
+            })
+
+            Toast.fire({
+            icon: 'success',
+            title: "{{ session('quote_massage')}}",
+            })
+        </script>
     @endif
+
+    {{-- Deleted massege alert start --}}
     @if (session()->has('quote_delete_massage'))
-    <div class="alert alert-danger">
-        {{ session('quote_delete_massage') }}
-    </div>
+    <script>
+        const Toast = Swal.mixin({
+        toast: true,
+        position: 'top-end',
+        showConfirmButton: false,
+        timer: 3000,
+        timerProgressBar: true,
+        didOpen: (toast) => {
+            toast.addEventListener('mouseenter', Swal.stopTimer)
+            toast.addEventListener('mouseleave', Swal.resumeTimer)
+        }
+        })
+
+        Toast.fire({
+        icon: 'error',
+        title: "{{ session('quote_delete_massage')}}",
+        })
+    </script>
     @endif
+
+    {{-- Updated massege alert start --}}
     @if (session()->has('quote_updated_massage'))
-    <div class="alert alert-success">
-        {{ session('quote_updated_massage') }}
-    </div>
+        <script>
+            const Toast = Swal.mixin({
+            toast: true,
+            position: 'top-end',
+            showConfirmButton: false,
+            timer: 3000,
+            timerProgressBar: true,
+            didOpen: (toast) => {
+                toast.addEventListener('mouseenter', Swal.stopTimer)
+                toast.addEventListener('mouseleave', Swal.resumeTimer)
+            }
+            })
+
+            Toast.fire({
+            icon: 'success',
+            title: "{{ session('quote_updated_massage')}}",
+            })
+        </script>
     @endif
 
       <div class="row">
@@ -94,8 +144,4 @@
 
 
 
-
-
-
-
-</div>
+    </div>

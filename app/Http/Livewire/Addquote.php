@@ -9,19 +9,14 @@ use Livewire\Component;
 class Addquote extends Component
 
 {
+    // public variables..
     public $name;
     public $quote;
     public $action ;
     public $search ;
-    // public $infos = [];
-    protected $rules = [
 
-        'name' => 'required|min:6',
 
-        'email' => 'required|email',
-
-    ];
-
+    // insert quote data...
     public function insert_quote(){
 
         Quote::insert([
@@ -31,13 +26,17 @@ class Addquote extends Component
         ]);
         $this->reset('name');
         $this->reset('quote');
-        session()->flash('quote_massage', 'Quote successfully updated.');
+        session()->flash('quote_massage', 'Quote successfully save.');
     }
+
+    // delete quote data function...
     public function deleteit($id){
         Quote::find($id)->delete();
 
         session()->flash('quote_delete_massage', 'Quote successfully deleted.');
     }
+
+    // save quote data  on model function...
     public function edit_it($edit_id){
 
       $edit =  Quote::where('id' ,$edit_id)->first();
@@ -46,20 +45,16 @@ class Addquote extends Component
           $this->action = $edit->id;
           $this->quote = $edit->quote;
 
-
-
-
-        // session()->flash('quote_delete_massage', 'Quote successfully deleted.');
     }
+
+    // when date update input field will be reset function...
     public function cancel(){
         $this->reset('name');
         $this->reset('quote');
     }
-    // public function saveinfo(){
 
-    //     $this->reset('name');
-    //     $this->reset('quote');
-    // }
+
+    // update data function...
     public function update(){
 
         $infos = Quote::where('id',$this->action)->update([

@@ -1,0 +1,66 @@
+*{
+    margin: 0;
+}
+
+h1,h2,h3.h4.h5,h6{
+    margin:  0;
+    padding: 0;
+}
+
+/* HEADER PART START */
+header h2{
+    font-family: 'Oswald', sans-serif;
+    font-size: 36px;
+    font-weight: 700;
+    color: #5800FF;
+}
+
+/* HEADER PART END */
+
+/* CONTENT BODY START */
+
+
+section .content_body h4{
+    font-family: 'Oswald', sans-serif !important;
+    font-size: 36px;
+    font-weight: 600;
+    color: #1A1A40;
+}
+section .content_body h4 span{
+    font-family: 'Blaka Hollow', cursive !important;
+    font-size: 22px;
+    font-weight: 400;
+    color: #1A1A40;
+}
+section .content_body h5{
+    font-family: 'Oswald', sans-serif;
+    font-size: 32px;
+    font-weight: 600;
+    margin-top: 12px !important;
+}
+
+/* QUOTE CONTENT START */
+
+section .content_quote{
+    margin-top: 36px;
+}
+
+section .content_quote h6{
+    font-family: 'Oswald', sans-serif;
+    font-size: 20px;
+    font-weight: 600;
+}
+
+section .content_quote h6 span{
+    font-family: 'Oswald', sans-serif;
+    font-size: 14px;
+    font-weight: 400;
+    color: green;
+}
+
+section .content_quote p{
+    font-family: 'Oswald', sans-serif;
+    font-size: 16px;
+    font-weight: 400;
+    color: #FB2576;
+}

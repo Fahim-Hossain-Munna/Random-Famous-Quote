@@ -1,3 +1,108 @@
+
+# Random Famous Person Quotes
+
+This is basically a Laravel livewire project for KKdestiny,  where task is make a webpage that shows Random famous people's quotes are written.
+
+Basically, an authentication system has been created here through which we can add,delete and update the words of famous persons. In addition, we have put a refresh button function in the root application page through which we can see the words of five famous persons at a time without any reloading.
+
+Most importantly there is no API system provided
+
+
+## Start Admin Seed
+
+Database Seeder
+
+```bash
+ name : Admin
+ email : admin@dev.com
+ password : 123456789
+```
+
+Start the installation 
+
+```bash
+  composer global require laravel/installer
+```
+```bash
+  laravel new example-app
+```
+
+Starter kit/Laravel Breeze 
+
+```bash
+  composer require laravel/breeze --dev
+```
+```bash
+  php artisan breeze:install
+```
+Install dependencies
+
+```bash
+  npm install
+```
+
+Start the server
+
+```bash
+  npm run dev
+```
+Migration
+
+```bash
+  php artisan migrate
+```
+
+Start the project
+
+```bash
+  php artisan serve
+```
+
+
+
+
+    
+## Features
+
+- Laravel Breeze Authentication system
+- Authentication with Amazing Dashboard
+- Responsive UI/UX
+- Laravel Livewire CRUD & Search field add
+- A Refresh Button to show random people quote without reloading
+
+
+## Screenshots
+
+Root page
+![App Screenshot](https://i.postimg.cc/QCW9pQzL/Famous-Quotes-root.png?text=App+Screenshot+Here)
+
+
+Login page
+![App Screenshot](https://i.postimg.cc/xC8bdDy1/Gymove-Fitness-Bootstrap-Admin-Dashboard-login.png?text=App+Screenshot+Here)
+
+
+Registration Page
+![App Screenshot](https://i.postimg.cc/XJPBGHQc/Gymove-Fitness-Bootstrap-Admin-Dashboard-registration.png?text=App+Screenshot+Here)
+
+
+Dashboard View
+![App Screenshot](https://i.postimg.cc/3wnv7JGq/Gymove-Fitness-Bootstrap-Admin-Dashboard-dashboard.png?text=App+Screenshot+Here)
+
+
+Quote Submit Page View
+![App Screenshot](https://i.postimg.cc/jC0WvWVD/Gymove-Fitness-Bootstrap-Admin-Dashboard-quote-add-page.png?text=App+Screenshot+Here)
+
+
+Quote Submit Page found no search result
+![App Screenshot](https://i.postimg.cc/7Lx2pT57/Gymove-Fitness-Bootstrap-Admin-Dashboard-no-search.png?text=App+Screenshot+Here)
+
+
+Quote Submit Page found search result
+![App Screenshot](https://i.postimg.cc/8zgWmYDZ/Gymove-Fitness-Bootstrap-Admin-Dashboard-search.png?text=App+Screenshot+Here)
+
+
+
+
 <p align="center"><a href="https://laravel.com" target="_blank"><img src="https://raw.githubusercontent.com/laravel/art/master/logo-lockup/5%20SVG/2%20CMYK/1%20Full%20Color/laravel-logolockup-cmyk-red.svg" width="400" alt="Laravel Logo"></a></p>
 
 <p align="center">

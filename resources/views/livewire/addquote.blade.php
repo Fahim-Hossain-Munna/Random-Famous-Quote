@@ -136,7 +136,7 @@
                 </tbody>
             </table>
             <div class="d-flex">
-                {{ $infos->links() }}
+                {{ $infos->withQueryString()->links() }}
             </div>
         </div>
 
